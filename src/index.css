@@ -1,0 +1,72 @@
+html {
+  --primary-color: #3388a8;
+  --primary-color-dark: #34648E;
+  --secondary-color: #33a845;
+  --border-color: #EBEBEB;
+  --background-color: #F8F8F8;
+  --font-color: #787878;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul[class] {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+fieldset {
+  border: none;
+}
+
+@font-face {
+  font-family: "BebasNeue-Regular";
+
+  src: local('BebasNeue-Regular'), url("./fonts/BebasNeue-Regular.ttf") format("truetype");
+  src: local('BebasNeue-Regular'), url("./fonts/BebasNeue-Regular.woff") format("woff");
+  src: local('BebasNeue-Regular'), url("./fonts/BebasNeue-Regular.woff2") format("woff2");
+
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

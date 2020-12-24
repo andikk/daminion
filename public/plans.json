@@ -1,0 +1,22 @@
+{
+  "plans": [
+    {
+      "id": "1",
+      "name": "1",
+      "price": "13"
+    },
+    {
+      "id": "2",
+      "name": "2",
+      "price": "22"
+    },
+    {
+      "id": "3",
+      "name": "3",
+      "price": "34"
+    }
+  ],
+  "planDefault": "3",
+  "numbers" : [5, 10, 20, 30],
+  "numberDefault" : 10
+}

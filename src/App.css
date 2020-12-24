@@ -1,0 +1,9 @@
+.navigation {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation__link:not(:last-child) {
+  margin-right: 2rem;
+}

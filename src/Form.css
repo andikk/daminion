@@ -1,0 +1,119 @@
+.form {
+  max-width: 500px;
+  margin: 2rem auto ;
+
+  color: var(--font-color);
+  background-color: var(--background-color);
+  border: 10px solid var(--border-color);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.form__item {
+  margin-bottom: 1rem;
+}
+
+.form__control-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 1rem 2rem;
+  border: 1px solid var(--background-color);
+}
+
+.form__control-label:hover {
+  border: 1px solid #B8D7E2;
+}
+
+.form__control-label-text {
+  margin-right: 5rem;
+  text-transform: uppercase;
+  font-family: BebasNeue-Regular, sans-serif;
+  font-size: 1.6rem;
+}
+
+.form__radio-control + .form__control-label {
+  cursor: pointer;
+}
+
+.form__radio-control + .form__control-label::before {
+  content: "";
+  display: inline-block;
+  margin-right: 20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 6px solid var(--border-color);
+}
+
+.form__radio-control:focus + .form__control-label::before {
+  border: 6px solid  var(--primary-color-dark);
+}
+
+.form__item--radio:hover .form__control-label::before {
+  border: 6px solid var(--primary-color-dark);
+}
+
+.form__radio-control:checked + .form__control-label {
+  border: 1px solid #B8D7E2;
+  background-color: #EBF4F7;
+}
+
+.form__radio-control:checked + .form__control-label::before {
+  background-image: radial-gradient(var(--primary-color) 0, var(--primary-color) 8px, transparent 8px);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 6px solid var(--primary-color-dark);
+}
+
+.form__item--select {
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 2rem;
+}
+
+.form__item--select label {
+  color: black;
+}
+
+.form__item--select select {
+  width: 3rem;
+}
+
+.form__price {
+  color: var(--primary-color);
+}
+
+.form__price sup {
+  position: relative;
+  top: 3px;
+  font-size: 1.1rem;
+}
+
+.form__selected {
+  padding-top: 3rem;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.form__total {
+  font-family: BebasNeue-Regular, sans-serif;
+  font-size: 1.6rem;
+}
+
+.form__button {
+  border: none;
+  background-color: var(--secondary-color);
+  padding: 1rem 4rem;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  background-color: #257833;
+}
